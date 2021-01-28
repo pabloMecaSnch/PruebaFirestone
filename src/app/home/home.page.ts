@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FirestoreService } from '../firestore.service';
+import { Tarea } from '../tarea';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  tareaEditando: Tarea;
 
+  constructor(private firestoreService: FirestoreService) {
+
+  }
+
+  clickBotonInsertar(){
+
+  }
 }
